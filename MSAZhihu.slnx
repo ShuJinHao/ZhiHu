@@ -1,0 +1,16 @@
+<Solution>
+  <Folder Name="/components/">
+    <Project Path="components/Zhihu.Authentication.JwtBearer/Zhihu.Authentication.JwtBearer.csproj" />
+  </Folder>
+  <Folder Name="/services/" />
+  <Folder Name="/services/user/">
+    <Project Path="services/user/Zhihu.UserService.Core/Zhihu.UserService.Core.csproj" />
+    <Project Path="services/user/Zhihu.UserService.Infrastructure/Zhihu.UserService.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/shared/">
+    <Project Path="shared/Zhihu.Core.Common/Zhihu.Core.Common.csproj" />
+    <Project Path="shared/Zhihu.Infrastructure.EFCore/Zhihu.Infrastructure.EFCore.csproj" />
+    <Project Path="shared/Zhihu.SharedKernel/Zhihu.SharedKernel.csproj" />
+    <Project Path="shared/Zhihu.SharedModels/Zhihu.SharedModels.csproj" />
+  </Folder>
+</Solution>

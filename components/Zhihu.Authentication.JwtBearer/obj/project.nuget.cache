@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "dgSpecHash": "5gmELWhBqLM=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\jinha\\Desktop\\testes\\云原生\\MSAZhihu\\components\\Zhihu.Authentication.JwtBearer\\Zhihu.Authentication.JwtBearer.csproj",
+  "expectedPackageFiles": [
+    "D:\\NugetCache\\microsoft.aspnetcore.authentication.jwtbearer\\10.0.1\\microsoft.aspnetcore.authentication.jwtbearer.10.0.1.nupkg.sha512",
+    "D:\\NugetCache\\microsoft.identitymodel.abstractions\\8.0.1\\microsoft.identitymodel.abstractions.8.0.1.nupkg.sha512",
+    "D:\\NugetCache\\microsoft.identitymodel.jsonwebtokens\\8.0.1\\microsoft.identitymodel.jsonwebtokens.8.0.1.nupkg.sha512",
+    "D:\\NugetCache\\microsoft.identitymodel.logging\\8.0.1\\microsoft.identitymodel.logging.8.0.1.nupkg.sha512",
+    "D:\\NugetCache\\microsoft.identitymodel.protocols\\8.0.1\\microsoft.identitymodel.protocols.8.0.1.nupkg.sha512",
+    "D:\\NugetCache\\microsoft.identitymodel.protocols.openidconnect\\8.0.1\\microsoft.identitymodel.protocols.openidconnect.8.0.1.nupkg.sha512",
+    "D:\\NugetCache\\microsoft.identitymodel.tokens\\8.0.1\\microsoft.identitymodel.tokens.8.0.1.nupkg.sha512",
+    "D:\\NugetCache\\system.identitymodel.tokens.jwt\\8.0.1\\system.identitymodel.tokens.jwt.8.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,245 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\jinha\\Desktop\\testes\\\u4E91\u539F\u751F\\MSAZhihu\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7B7D34F0-D4BD-54E6-92CD-5E4E1710A3CD}|components\\Zhihu.Authentication.JwtBearer\\Zhihu.Authentication.JwtBearer.csproj|c:\\users\\jinha\\desktop\\testes\\\u4E91\u539F\u751F\\msazhihu\\components\\zhihu.authentication.jwtbearer\\jwtsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B7D34F0-D4BD-54E6-92CD-5E4E1710A3CD}|components\\Zhihu.Authentication.JwtBearer\\Zhihu.Authentication.JwtBearer.csproj|solutionrelative:components\\zhihu.authentication.jwtbearer\\jwtsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B7D34F0-D4BD-54E6-92CD-5E4E1710A3CD}|components\\Zhihu.Authentication.JwtBearer\\Zhihu.Authentication.JwtBearer.csproj|c:\\users\\jinha\\desktop\\testes\\\u4E91\u539F\u751F\\msazhihu\\components\\zhihu.authentication.jwtbearer\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B7D34F0-D4BD-54E6-92CD-5E4E1710A3CD}|components\\Zhihu.Authentication.JwtBearer\\Zhihu.Authentication.JwtBearer.csproj|solutionrelative:components\\zhihu.authentication.jwtbearer\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0345D3F2-F4A3-B526-0F83-2B6080B6D9FB}|services\\user\\Zhihu.UserService.Infrastructure\\Zhihu.UserService.Infrastructure.csproj|c:\\users\\jinha\\desktop\\testes\\\u4E91\u539F\u751F\\msazhihu\\services\\user\\zhihu.userservice.infrastructure\\globalusings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0345D3F2-F4A3-B526-0F83-2B6080B6D9FB}|services\\user\\Zhihu.UserService.Infrastructure\\Zhihu.UserService.Infrastructure.csproj|solutionrelative:services\\user\\zhihu.userservice.infrastructure\\globalusings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0345D3F2-F4A3-B526-0F83-2B6080B6D9FB}|services\\user\\Zhihu.UserService.Infrastructure\\Zhihu.UserService.Infrastructure.csproj|c:\\users\\jinha\\desktop\\testes\\\u4E91\u539F\u751F\\msazhihu\\services\\user\\zhihu.userservice.infrastructure\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0345D3F2-F4A3-B526-0F83-2B6080B6D9FB}|services\\user\\Zhihu.UserService.Infrastructure\\Zhihu.UserService.Infrastructure.csproj|solutionrelative:services\\user\\zhihu.userservice.infrastructure\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0345D3F2-F4A3-B526-0F83-2B6080B6D9FB}|services\\user\\Zhihu.UserService.Infrastructure\\Zhihu.UserService.Infrastructure.csproj|c:\\users\\jinha\\desktop\\testes\\\u4E91\u539F\u751F\\msazhihu\\services\\user\\zhihu.userservice.infrastructure\\contexts\\userreaddbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0345D3F2-F4A3-B526-0F83-2B6080B6D9FB}|services\\user\\Zhihu.UserService.Infrastructure\\Zhihu.UserService.Infrastructure.csproj|solutionrelative:services\\user\\zhihu.userservice.infrastructure\\contexts\\userreaddbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0345D3F2-F4A3-B526-0F83-2B6080B6D9FB}|services\\user\\Zhihu.UserService.Infrastructure\\Zhihu.UserService.Infrastructure.csproj|c:\\users\\jinha\\desktop\\testes\\\u4E91\u539F\u751F\\msazhihu\\services\\user\\zhihu.userservice.infrastructure\\contexts\\userdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0345D3F2-F4A3-B526-0F83-2B6080B6D9FB}|services\\user\\Zhihu.UserService.Infrastructure\\Zhihu.UserService.Infrastructure.csproj|solutionrelative:services\\user\\zhihu.userservice.infrastructure\\contexts\\userdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0345D3F2-F4A3-B526-0F83-2B6080B6D9FB}|services\\user\\Zhihu.UserService.Infrastructure\\Zhihu.UserService.Infrastructure.csproj|c:\\users\\jinha\\desktop\\testes\\\u4E91\u539F\u751F\\msazhihu\\services\\user\\zhihu.userservice.infrastructure\\repositories\\userreadreposity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0345D3F2-F4A3-B526-0F83-2B6080B6D9FB}|services\\user\\Zhihu.UserService.Infrastructure\\Zhihu.UserService.Infrastructure.csproj|solutionrelative:services\\user\\zhihu.userservice.infrastructure\\repositories\\userreadreposity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0345D3F2-F4A3-B526-0F83-2B6080B6D9FB}|services\\user\\Zhihu.UserService.Infrastructure\\Zhihu.UserService.Infrastructure.csproj|c:\\users\\jinha\\desktop\\testes\\\u4E91\u539F\u751F\\msazhihu\\services\\user\\zhihu.userservice.infrastructure\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0345D3F2-F4A3-B526-0F83-2B6080B6D9FB}|services\\user\\Zhihu.UserService.Infrastructure\\Zhihu.UserService.Infrastructure.csproj|solutionrelative:services\\user\\zhihu.userservice.infrastructure\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0345D3F2-F4A3-B526-0F83-2B6080B6D9FB}|services\\user\\Zhihu.UserService.Infrastructure\\Zhihu.UserService.Infrastructure.csproj|c:\\users\\jinha\\desktop\\testes\\\u4E91\u539F\u751F\\msazhihu\\services\\user\\zhihu.userservice.infrastructure\\identity\\identityuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0345D3F2-F4A3-B526-0F83-2B6080B6D9FB}|services\\user\\Zhihu.UserService.Infrastructure\\Zhihu.UserService.Infrastructure.csproj|solutionrelative:services\\user\\zhihu.userservice.infrastructure\\identity\\identityuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0345D3F2-F4A3-B526-0F83-2B6080B6D9FB}|services\\user\\Zhihu.UserService.Infrastructure\\Zhihu.UserService.Infrastructure.csproj|c:\\users\\jinha\\desktop\\testes\\\u4E91\u539F\u751F\\msazhihu\\services\\user\\zhihu.userservice.infrastructure\\identity\\identityservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0345D3F2-F4A3-B526-0F83-2B6080B6D9FB}|services\\user\\Zhihu.UserService.Infrastructure\\Zhihu.UserService.Infrastructure.csproj|solutionrelative:services\\user\\zhihu.userservice.infrastructure\\identity\\identityservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0345D3F2-F4A3-B526-0F83-2B6080B6D9FB}|services\\user\\Zhihu.UserService.Infrastructure\\Zhihu.UserService.Infrastructure.csproj|c:\\users\\jinha\\desktop\\testes\\\u4E91\u539F\u751F\\msazhihu\\services\\user\\zhihu.userservice.infrastructure\\configuration\\followuserconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0345D3F2-F4A3-B526-0F83-2B6080B6D9FB}|services\\user\\Zhihu.UserService.Infrastructure\\Zhihu.UserService.Infrastructure.csproj|solutionrelative:services\\user\\zhihu.userservice.infrastructure\\configuration\\followuserconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0345D3F2-F4A3-B526-0F83-2B6080B6D9FB}|services\\user\\Zhihu.UserService.Infrastructure\\Zhihu.UserService.Infrastructure.csproj|c:\\users\\jinha\\desktop\\testes\\\u4E91\u539F\u751F\\msazhihu\\services\\user\\zhihu.userservice.infrastructure\\configuration\\appuserconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0345D3F2-F4A3-B526-0F83-2B6080B6D9FB}|services\\user\\Zhihu.UserService.Infrastructure\\Zhihu.UserService.Infrastructure.csproj|solutionrelative:services\\user\\zhihu.userservice.infrastructure\\configuration\\appuserconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0345D3F2-F4A3-B526-0F83-2B6080B6D9FB}|services\\user\\Zhihu.UserService.Infrastructure\\Zhihu.UserService.Infrastructure.csproj|c:\\users\\jinha\\desktop\\testes\\\u4E91\u539F\u751F\\msazhihu\\services\\user\\zhihu.userservice.infrastructure\\zhihu.userservice.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{0345D3F2-F4A3-B526-0F83-2B6080B6D9FB}|services\\user\\Zhihu.UserService.Infrastructure\\Zhihu.UserService.Infrastructure.csproj|solutionrelative:services\\user\\zhihu.userservice.infrastructure\\zhihu.userservice.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "JwtSettings.cs",
+              "DocumentMoniker": "C:\\Users\\jinha\\Desktop\\testes\\\u4E91\u539F\u751F\\MSAZhihu\\components\\Zhihu.Authentication.JwtBearer\\JwtSettings.cs",
+              "RelativeDocumentMoniker": "components\\Zhihu.Authentication.JwtBearer\\JwtSettings.cs",
+              "ToolTip": "C:\\Users\\jinha\\Desktop\\testes\\\u4E91\u539F\u751F\\MSAZhihu\\components\\Zhihu.Authentication.JwtBearer\\JwtSettings.cs",
+              "RelativeToolTip": "components\\Zhihu.Authentication.JwtBearer\\JwtSettings.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-30T07:16:24.681Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DependencyInjection.cs",
+              "DocumentMoniker": "C:\\Users\\jinha\\Desktop\\testes\\\u4E91\u539F\u751F\\MSAZhihu\\components\\Zhihu.Authentication.JwtBearer\\DependencyInjection.cs",
+              "RelativeDocumentMoniker": "components\\Zhihu.Authentication.JwtBearer\\DependencyInjection.cs",
+              "ToolTip": "C:\\Users\\jinha\\Desktop\\testes\\\u4E91\u539F\u751F\\MSAZhihu\\components\\Zhihu.Authentication.JwtBearer\\DependencyInjection.cs",
+              "RelativeToolTip": "components\\Zhihu.Authentication.JwtBearer\\DependencyInjection.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-30T07:16:21.553Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "GlobalUsings.cs",
+              "DocumentMoniker": "C:\\Users\\jinha\\Desktop\\testes\\\u4E91\u539F\u751F\\MSAZhihu\\services\\user\\Zhihu.UserService.Infrastructure\\GlobalUsings.cs",
+              "RelativeDocumentMoniker": "services\\user\\Zhihu.UserService.Infrastructure\\GlobalUsings.cs",
+              "ToolTip": "C:\\Users\\jinha\\Desktop\\testes\\\u4E91\u539F\u751F\\MSAZhihu\\services\\user\\Zhihu.UserService.Infrastructure\\GlobalUsings.cs",
+              "RelativeToolTip": "services\\user\\Zhihu.UserService.Infrastructure\\GlobalUsings.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-30T07:09:16.958Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DependencyInjection.cs",
+              "DocumentMoniker": "C:\\Users\\jinha\\Desktop\\testes\\\u4E91\u539F\u751F\\MSAZhihu\\services\\user\\Zhihu.UserService.Infrastructure\\DependencyInjection.cs",
+              "RelativeDocumentMoniker": "services\\user\\Zhihu.UserService.Infrastructure\\DependencyInjection.cs",
+              "ToolTip": "C:\\Users\\jinha\\Desktop\\testes\\\u4E91\u539F\u751F\\MSAZhihu\\services\\user\\Zhihu.UserService.Infrastructure\\DependencyInjection.cs*",
+              "RelativeToolTip": "services\\user\\Zhihu.UserService.Infrastructure\\DependencyInjection.cs*",
+              "ViewState": "AgIAABMAAAAAAAAAAAAAwCMAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-30T07:08:57.726Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\jinha\\Desktop\\testes\\\u4E91\u539F\u751F\\MSAZhihu\\services\\user\\Zhihu.UserService.Infrastructure\\Repositories\\UserRepository.cs",
+              "RelativeDocumentMoniker": "services\\user\\Zhihu.UserService.Infrastructure\\Repositories\\UserRepository.cs",
+              "ToolTip": "C:\\Users\\jinha\\Desktop\\testes\\\u4E91\u539F\u751F\\MSAZhihu\\services\\user\\Zhihu.UserService.Infrastructure\\Repositories\\UserRepository.cs",
+              "RelativeToolTip": "services\\user\\Zhihu.UserService.Infrastructure\\Repositories\\UserRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-30T07:08:23.622Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "UserReadReposity.cs",
+              "DocumentMoniker": "C:\\Users\\jinha\\Desktop\\testes\\\u4E91\u539F\u751F\\MSAZhihu\\services\\user\\Zhihu.UserService.Infrastructure\\Repositories\\UserReadReposity.cs",
+              "RelativeDocumentMoniker": "services\\user\\Zhihu.UserService.Infrastructure\\Repositories\\UserReadReposity.cs",
+              "ToolTip": "C:\\Users\\jinha\\Desktop\\testes\\\u4E91\u539F\u751F\\MSAZhihu\\services\\user\\Zhihu.UserService.Infrastructure\\Repositories\\UserReadReposity.cs*",
+              "RelativeToolTip": "services\\user\\Zhihu.UserService.Infrastructure\\Repositories\\UserReadReposity.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAABPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-30T07:08:09.435Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Zhihu.UserService.Infrastructure",
+              "DocumentMoniker": "C:\\Users\\jinha\\Desktop\\testes\\\u4E91\u539F\u751F\\MSAZhihu\\services\\user\\Zhihu.UserService.Infrastructure\\Zhihu.UserService.Infrastructure.csproj",
+              "RelativeDocumentMoniker": "services\\user\\Zhihu.UserService.Infrastructure\\Zhihu.UserService.Infrastructure.csproj",
+              "ToolTip": "C:\\Users\\jinha\\Desktop\\testes\\\u4E91\u539F\u751F\\MSAZhihu\\services\\user\\Zhihu.UserService.Infrastructure\\Zhihu.UserService.Infrastructure.csproj*",
+              "RelativeToolTip": "services\\user\\Zhihu.UserService.Infrastructure\\Zhihu.UserService.Infrastructure.csproj*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-12-30T07:06:37.931Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "IdentityUser.cs",
+              "DocumentMoniker": "C:\\Users\\jinha\\Desktop\\testes\\\u4E91\u539F\u751F\\MSAZhihu\\services\\user\\Zhihu.UserService.Infrastructure\\Identity\\IdentityUser.cs",
+              "RelativeDocumentMoniker": "services\\user\\Zhihu.UserService.Infrastructure\\Identity\\IdentityUser.cs",
+              "ToolTip": "C:\\Users\\jinha\\Desktop\\testes\\\u4E91\u539F\u751F\\MSAZhihu\\services\\user\\Zhihu.UserService.Infrastructure\\Identity\\IdentityUser.cs",
+              "RelativeToolTip": "services\\user\\Zhihu.UserService.Infrastructure\\Identity\\IdentityUser.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-30T07:07:54.942Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "IdentityService.cs",
+              "DocumentMoniker": "C:\\Users\\jinha\\Desktop\\testes\\\u4E91\u539F\u751F\\MSAZhihu\\services\\user\\Zhihu.UserService.Infrastructure\\Identity\\IdentityService.cs",
+              "RelativeDocumentMoniker": "services\\user\\Zhihu.UserService.Infrastructure\\Identity\\IdentityService.cs",
+              "ToolTip": "C:\\Users\\jinha\\Desktop\\testes\\\u4E91\u539F\u751F\\MSAZhihu\\services\\user\\Zhihu.UserService.Infrastructure\\Identity\\IdentityService.cs*",
+              "RelativeToolTip": "services\\user\\Zhihu.UserService.Infrastructure\\Identity\\IdentityService.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-30T07:07:37.602Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UserReadDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\jinha\\Desktop\\testes\\\u4E91\u539F\u751F\\MSAZhihu\\services\\user\\Zhihu.UserService.Infrastructure\\Contexts\\UserReadDbContext.cs",
+              "RelativeDocumentMoniker": "services\\user\\Zhihu.UserService.Infrastructure\\Contexts\\UserReadDbContext.cs",
+              "ToolTip": "C:\\Users\\jinha\\Desktop\\testes\\\u4E91\u539F\u751F\\MSAZhihu\\services\\user\\Zhihu.UserService.Infrastructure\\Contexts\\UserReadDbContext.cs",
+              "RelativeToolTip": "services\\user\\Zhihu.UserService.Infrastructure\\Contexts\\UserReadDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAABOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-30T07:07:22.761Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UserDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\jinha\\Desktop\\testes\\\u4E91\u539F\u751F\\MSAZhihu\\services\\user\\Zhihu.UserService.Infrastructure\\Contexts\\UserDbContext.cs",
+              "RelativeDocumentMoniker": "services\\user\\Zhihu.UserService.Infrastructure\\Contexts\\UserDbContext.cs",
+              "ToolTip": "C:\\Users\\jinha\\Desktop\\testes\\\u4E91\u539F\u751F\\MSAZhihu\\services\\user\\Zhihu.UserService.Infrastructure\\Contexts\\UserDbContext.cs*",
+              "RelativeToolTip": "services\\user\\Zhihu.UserService.Infrastructure\\Contexts\\UserDbContext.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAcAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-30T07:07:15.6Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "FollowUserConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\jinha\\Desktop\\testes\\\u4E91\u539F\u751F\\MSAZhihu\\services\\user\\Zhihu.UserService.Infrastructure\\Configuration\\FollowUserConfiguration.cs",
+              "RelativeDocumentMoniker": "services\\user\\Zhihu.UserService.Infrastructure\\Configuration\\FollowUserConfiguration.cs",
+              "ToolTip": "C:\\Users\\jinha\\Desktop\\testes\\\u4E91\u539F\u751F\\MSAZhihu\\services\\user\\Zhihu.UserService.Infrastructure\\Configuration\\FollowUserConfiguration.cs*",
+              "RelativeToolTip": "services\\user\\Zhihu.UserService.Infrastructure\\Configuration\\FollowUserConfiguration.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-30T07:07:08.182Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "AppUserConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\jinha\\Desktop\\testes\\\u4E91\u539F\u751F\\MSAZhihu\\services\\user\\Zhihu.UserService.Infrastructure\\Configuration\\AppUserConfiguration.cs",
+              "RelativeDocumentMoniker": "services\\user\\Zhihu.UserService.Infrastructure\\Configuration\\AppUserConfiguration.cs",
+              "ToolTip": "C:\\Users\\jinha\\Desktop\\testes\\\u4E91\u539F\u751F\\MSAZhihu\\services\\user\\Zhihu.UserService.Infrastructure\\Configuration\\AppUserConfiguration.cs*",
+              "RelativeToolTip": "services\\user\\Zhihu.UserService.Infrastructure\\Configuration\\AppUserConfiguration.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-30T07:06:57.2Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

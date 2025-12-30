@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "OoVtZ1KxJAc=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\jinha\\Desktop\\testes\\云原生\\MSAZhihu\\services\\user\\Zhihu.UserService.Core\\Zhihu.UserService.Core.csproj",
+  "expectedPackageFiles": [
+    "D:\\NugetCache\\mediatr\\12.4.1\\mediatr.12.4.1.nupkg.sha512",
+    "D:\\NugetCache\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
+    "D:\\NugetCache\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

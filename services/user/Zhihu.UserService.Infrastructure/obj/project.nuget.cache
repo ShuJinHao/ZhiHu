@@ -1,0 +1,57 @@
+{
+  "version": 2,
+  "dgSpecHash": "WZrkNecojSw=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\jinha\\Desktop\\testes\\云原生\\MSAZhihu\\services\\user\\Zhihu.UserService.Infrastructure\\Zhihu.UserService.Infrastructure.csproj",
+  "expectedPackageFiles": [
+    "D:\\NugetCache\\mediatr\\12.4.1\\mediatr.12.4.1.nupkg.sha512",
+    "D:\\NugetCache\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
+    "D:\\NugetCache\\microsoft.aspnetcore.authentication.jwtbearer\\10.0.1\\microsoft.aspnetcore.authentication.jwtbearer.10.0.1.nupkg.sha512",
+    "D:\\NugetCache\\microsoft.aspnetcore.cryptography.internal\\10.0.1\\microsoft.aspnetcore.cryptography.internal.10.0.1.nupkg.sha512",
+    "D:\\NugetCache\\microsoft.aspnetcore.cryptography.keyderivation\\10.0.1\\microsoft.aspnetcore.cryptography.keyderivation.10.0.1.nupkg.sha512",
+    "D:\\NugetCache\\microsoft.aspnetcore.identity.entityframeworkcore\\10.0.1\\microsoft.aspnetcore.identity.entityframeworkcore.10.0.1.nupkg.sha512",
+    "D:\\NugetCache\\microsoft.entityframeworkcore\\10.0.1\\microsoft.entityframeworkcore.10.0.1.nupkg.sha512",
+    "D:\\NugetCache\\microsoft.entityframeworkcore.abstractions\\10.0.1\\microsoft.entityframeworkcore.abstractions.10.0.1.nupkg.sha512",
+    "D:\\NugetCache\\microsoft.entityframeworkcore.analyzers\\10.0.1\\microsoft.entityframeworkcore.analyzers.10.0.1.nupkg.sha512",
+    "D:\\NugetCache\\microsoft.entityframeworkcore.relational\\10.0.1\\microsoft.entityframeworkcore.relational.10.0.1.nupkg.sha512",
+    "D:\\NugetCache\\microsoft.extensions.caching.abstractions\\10.0.1\\microsoft.extensions.caching.abstractions.10.0.1.nupkg.sha512",
+    "D:\\NugetCache\\microsoft.extensions.caching.memory\\10.0.1\\microsoft.extensions.caching.memory.10.0.1.nupkg.sha512",
+    "D:\\NugetCache\\microsoft.extensions.configuration\\10.0.1\\microsoft.extensions.configuration.10.0.1.nupkg.sha512",
+    "D:\\NugetCache\\microsoft.extensions.configuration.abstractions\\10.0.1\\microsoft.extensions.configuration.abstractions.10.0.1.nupkg.sha512",
+    "D:\\NugetCache\\microsoft.extensions.configuration.binder\\10.0.1\\microsoft.extensions.configuration.binder.10.0.1.nupkg.sha512",
+    "D:\\NugetCache\\microsoft.extensions.dependencyinjection\\10.0.1\\microsoft.extensions.dependencyinjection.10.0.1.nupkg.sha512",
+    "D:\\NugetCache\\microsoft.extensions.dependencyinjection.abstractions\\10.0.1\\microsoft.extensions.dependencyinjection.abstractions.10.0.1.nupkg.sha512",
+    "D:\\NugetCache\\microsoft.extensions.diagnostics\\10.0.1\\microsoft.extensions.diagnostics.10.0.1.nupkg.sha512",
+    "D:\\NugetCache\\microsoft.extensions.diagnostics.abstractions\\10.0.1\\microsoft.extensions.diagnostics.abstractions.10.0.1.nupkg.sha512",
+    "D:\\NugetCache\\microsoft.extensions.identity.core\\10.0.1\\microsoft.extensions.identity.core.10.0.1.nupkg.sha512",
+    "D:\\NugetCache\\microsoft.extensions.identity.stores\\10.0.1\\microsoft.extensions.identity.stores.10.0.1.nupkg.sha512",
+    "D:\\NugetCache\\microsoft.extensions.logging\\10.0.1\\microsoft.extensions.logging.10.0.1.nupkg.sha512",
+    "D:\\NugetCache\\microsoft.extensions.logging.abstractions\\10.0.1\\microsoft.extensions.logging.abstractions.10.0.1.nupkg.sha512",
+    "D:\\NugetCache\\microsoft.extensions.options\\10.0.1\\microsoft.extensions.options.10.0.1.nupkg.sha512",
+    "D:\\NugetCache\\microsoft.extensions.options.configurationextensions\\10.0.1\\microsoft.extensions.options.configurationextensions.10.0.1.nupkg.sha512",
+    "D:\\NugetCache\\microsoft.extensions.primitives\\10.0.1\\microsoft.extensions.primitives.10.0.1.nupkg.sha512",
+    "D:\\NugetCache\\microsoft.identitymodel.abstractions\\8.0.1\\microsoft.identitymodel.abstractions.8.0.1.nupkg.sha512",
+    "D:\\NugetCache\\microsoft.identitymodel.jsonwebtokens\\8.0.1\\microsoft.identitymodel.jsonwebtokens.8.0.1.nupkg.sha512",
+    "D:\\NugetCache\\microsoft.identitymodel.logging\\8.0.1\\microsoft.identitymodel.logging.8.0.1.nupkg.sha512",
+    "D:\\NugetCache\\microsoft.identitymodel.protocols\\8.0.1\\microsoft.identitymodel.protocols.8.0.1.nupkg.sha512",
+    "D:\\NugetCache\\microsoft.identitymodel.protocols.openidconnect\\8.0.1\\microsoft.identitymodel.protocols.openidconnect.8.0.1.nupkg.sha512",
+    "D:\\NugetCache\\microsoft.identitymodel.tokens\\8.0.1\\microsoft.identitymodel.tokens.8.0.1.nupkg.sha512",
+    "D:\\NugetCache\\mysqlconnector\\2.4.0\\mysqlconnector.2.4.0.nupkg.sha512",
+    "D:\\NugetCache\\pomelo.entityframeworkcore.mysql\\9.0.0\\pomelo.entityframeworkcore.mysql.9.0.0.nupkg.sha512",
+    "D:\\NugetCache\\system.identitymodel.tokens.jwt\\8.0.1\\system.identitymodel.tokens.jwt.8.0.1.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1608",
+      "level": "Warning",
+      "message": "检测到的包版本在依赖项约束之外: Pomelo.EntityFrameworkCore.MySql 9.0.0 需要 Microsoft.EntityFrameworkCore.Relational (>= 9.0.0 && <= 9.0.999)，但版本 Microsoft.EntityFrameworkCore.Relational 10.0.1 已解决。",
+      "projectPath": "C:\\Users\\jinha\\Desktop\\testes\\云原生\\MSAZhihu\\services\\user\\Zhihu.UserService.Infrastructure\\Zhihu.UserService.Infrastructure.csproj",
+      "warningLevel": 1,
+      "filePath": "C:\\Users\\jinha\\Desktop\\testes\\云原生\\MSAZhihu\\services\\user\\Zhihu.UserService.Infrastructure\\Zhihu.UserService.Infrastructure.csproj",
+      "libraryId": "Microsoft.EntityFrameworkCore.Relational",
+      "targetGraphs": [
+        "net10.0"
+      ]
+    }
+  ]
+}
