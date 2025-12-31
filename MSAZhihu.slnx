@@ -1,11 +1,17 @@
 <Solution>
+  <Folder Name="/aspire/">
+    <Project Path="aspire/Zhihu.AppHost/Zhihu.AppHost.csproj" Id="bd136d83-411c-4f9c-b5dc-62c0f9e4d38a" />
+    <Project Path="aspire/Zhihu.ServiceDefaults/Zhihu.ServiceDefaults.csproj" Id="c1970043-5ab6-443a-b421-15919fa44b08" />
+  </Folder>
   <Folder Name="/components/">
     <Project Path="components/Zhihu.Authentication.JwtBearer/Zhihu.Authentication.JwtBearer.csproj" />
   </Folder>
   <Folder Name="/services/" />
   <Folder Name="/services/user/">
     <Project Path="services/user/Zhihu.UserService.Core/Zhihu.UserService.Core.csproj" />
+    <Project Path="services/user/Zhihu.UserService.HttpApi/Zhihu.UserService.HttpApi.csproj" Id="bc587494-4331-4e64-b692-15976f17ef83" />
     <Project Path="services/user/Zhihu.UserService.Infrastructure/Zhihu.UserService.Infrastructure.csproj" />
+    <Project Path="services/user/Zhihu.UserService.MigrationWorker/Zhihu.UserService.MigrationWorker.csproj" />
     <Project Path="services/user/Zhihu.UserService.UseCases/Zhihu.UserService.UseCases.csproj" Id="5393a8fa-8526-4549-b236-0bd846954201" />
   </Folder>
   <Folder Name="/shared/">
