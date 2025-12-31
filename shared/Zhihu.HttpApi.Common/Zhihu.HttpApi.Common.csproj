@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+  
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="10.0.1" />
+
+    <PackageReference Include="Microsoft.OpenApi" Version="3.1.1" />
+
+    <PackageReference Include="Scalar.AspNetCore" Version="2.11.10" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\components\Zhihu.Authentication.JwtBearer\Zhihu.Authentication.JwtBearer.csproj" />
+    <ProjectReference Include="..\Zhihu.UseCases.Common\Zhihu.UseCases.Common.csproj" />
+  </ItemGroup>
+
+</Project>
