@@ -6,7 +6,7 @@ using Zhihu.UserService.UseCases;
 // Add services to the container.
 
 var builder = WebApplication.CreateBuilder(args);
-
+builder.Configuration.AddDaprConfiguration();
 builder.AddServiceDefaults();
 
 builder.Services

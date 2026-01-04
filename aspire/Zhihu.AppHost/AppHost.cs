@@ -1,3 +1,4 @@
+using CommunityToolkit.Aspire.Hosting.Dapr;
 using Zhihu.AppHost;
 
 var builder = DistributedApplication.CreateBuilder(args);
@@ -9,6 +10,11 @@ var mysql = builder.AddMySql("mysql")
     .WithPhpMyAdmin()
     .WithLifetime(ContainerLifetime.Persistent);
 
-builder.AddUserService(mysql);
+var daprSidecarOptions = new DaprSidecarOptions
+{
+    ResourcesPaths = ["./DaprComponents"]
+};
+
+builder.AddUserService(mysql, daprSidecarOptions);
 
 builder.Build().Run();

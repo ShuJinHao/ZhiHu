@@ -13,6 +13,10 @@ public static class DependencyInjection
 {
     public static IServiceCollection AddHttpApiCommon(this IServiceCollection services, IConfiguration configuration)
     {
+        services.AddDaprClient(builder => builder.UseJsonSerializationOptions(new JsonSerializerOptions
+        {
+            PropertyNamingPolicy = JsonNamingPolicy.SnakeCaseLower
+        }));
         services.AddJwtBearer(configuration);
 
         // 2. 关键：加上这句，让原生 OpenAPI 能扫描到 Controller
