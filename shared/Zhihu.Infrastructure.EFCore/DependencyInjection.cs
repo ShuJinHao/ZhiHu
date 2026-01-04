@@ -1,6 +1,4 @@
-﻿using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
+﻿using Microsoft.Extensions.DependencyInjection;
 using Zhihu.Infrastructure.EFCore.Interceptors;
 
 namespace Zhihu.Infrastructure.EFCore;

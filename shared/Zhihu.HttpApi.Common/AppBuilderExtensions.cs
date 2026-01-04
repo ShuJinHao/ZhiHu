@@ -15,11 +15,9 @@ public static class AppBuilderExtensions
                 options.WithDefaultHttpClient(ScalarTarget.CSharp, ScalarClient.HttpClient);
             });
         }
-        
-        app.MapControllers();
-        
+
         app.MapOpenApi();
-        
+
         app.UseCors("AllowAny");
 
         app.UseAuthentication();
