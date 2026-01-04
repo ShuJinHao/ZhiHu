@@ -2,7 +2,7 @@
 
 namespace Zhihu.SharedModels.Question;
 
-public class AnswerLikedEvent : BaseEvent
+public class AnswerLikedEvent(int questionId) : BaseEvent
 {
-    public int QuestionId { get; set; }
+    public int QuestionId { get; set; } = questionId;
 }

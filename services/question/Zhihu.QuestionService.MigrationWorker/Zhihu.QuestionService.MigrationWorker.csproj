@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>dotnet-Zhihu.QuestionService.MigrationWorker-e4a1e374-ffad-4e63-ae0a-33ad7b5d5494</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="10.0.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="9.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\aspire\Zhihu.ServiceDefaults\Zhihu.ServiceDefaults.csproj" />
+    <ProjectReference Include="..\QuestionService.Infrastructure\Zhihu.QuestionService.Infrastructure.csproj" />
+  </ItemGroup>
+</Project>

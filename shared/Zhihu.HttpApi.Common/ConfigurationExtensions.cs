@@ -3,6 +3,7 @@ using Microsoft.Extensions.Configuration;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using Zhihu.SharedModels;
 
 namespace Zhihu.HttpApi.Common;
 
@@ -18,9 +19,7 @@ public static class ConfigurationExtensions
         };
         if (specKeys is not null) keys.AddRange(specKeys);
 
-        const string daprConfigStore = "redis-config";
-
-        var config = client.GetConfiguration(daprConfigStore, keys).GetAwaiter().GetResult();
+        var config = client.GetConfiguration(DaprContacts.ConfigStore, keys).GetAwaiter().GetResult();
 
         foreach (var item in config.Items)
         {

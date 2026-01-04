@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\shared\Zhihu.Infrastructure.Cache\Zhihu.Infrastructure.Cache.csproj" />
+    <ProjectReference Include="..\..\..\shared\Zhihu.Infrastructure.EFCore\Zhihu.Infrastructure.EFCore.csproj" />
+    <ProjectReference Include="..\..\..\shared\Zhihu.Infrastructure.MessageBus\Zhihu.Infrastructure.MessageBus.csproj" />
+    <ProjectReference Include="..\Zhihu.QuestionService.Core\Zhihu.QuestionService.Core.csproj" />
+  </ItemGroup>
+
+</Project>

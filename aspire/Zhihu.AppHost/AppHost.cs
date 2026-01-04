@@ -3,11 +3,18 @@ using Zhihu.AppHost;
 
 var builder = DistributedApplication.CreateBuilder(args);
 
-// 【新增】强制允许不安全传输，解决 OTLP/Dashboard 报 HTTP 错误的问题
-builder.Configuration["ASPIRE_ALLOW_UNSECURED_TRANSPORT"] = "true";
-
 var mysql = builder.AddMySql("mysql")
     .WithPhpMyAdmin()
+    .WithLifetime(ContainerLifetime.Persistent);
+
+var redis = builder.AddRedis("redis")
+    .WithRedisInsight()
+    .WithLifetime(ContainerLifetime.Persistent);
+
+var username = builder.AddParameter("username", secret: true);
+var password = builder.AddParameter("password", secret: true);
+var rabbitmq = builder.AddRabbitMQ("rabbitmq", username, password, 5672)
+    .WithManagementPlugin()
     .WithLifetime(ContainerLifetime.Persistent);
 
 var daprSidecarOptions = new DaprSidecarOptions
@@ -16,5 +23,7 @@ var daprSidecarOptions = new DaprSidecarOptions
 };
 
 builder.AddUserService(mysql, daprSidecarOptions);
+
+builder.AddQuestionService(mysql, redis, rabbitmq, daprSidecarOptions);
 
 builder.Build().Run();

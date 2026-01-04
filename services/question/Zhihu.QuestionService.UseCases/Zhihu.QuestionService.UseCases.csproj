@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\shared\Zhihu.SharedModels\Zhihu.SharedModels.csproj" />
+    <ProjectReference Include="..\..\..\shared\Zhihu.UseCases.Common\Zhihu.UseCases.Common.csproj" />
+    <ProjectReference Include="..\QuestionService.Infrastructure\Zhihu.QuestionService.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>

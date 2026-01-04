@@ -22,8 +22,56 @@ public static class DependencyInjection
         // 2. 关键：加上这句，让原生 OpenAPI 能扫描到 Controller
         services.AddEndpointsApiExplorer();
 
-        // 3. 原生 OpenAPI 注册 (不要加任何 Transformer 参数！)
-        services.AddOpenApi();
+        services.AddOpenApi(options =>
+        {
+            options.AddDocumentTransformer((document, context, cancellationToken) =>
+            {
+                // 1. 初始化 Info
+                document.Info ??= new Microsoft.OpenApi.OpenApiInfo();
+                document.Info.Title = "知乎 API";
+                document.Info.Version = "v1";
+
+                // 2. 初始化 Components
+                document.Components ??= new Microsoft.OpenApi.OpenApiComponents();
+
+                // ★★★ 核心修复：显式使用 IOpenApiSecurityScheme 接口初始化字典 ★★★
+                // 既然 Interfaces 命名空间不存在，那么 IOpenApiSecurityScheme 一定在根目录下
+                document.Components.SecuritySchemes ??= new Dictionary<string, Microsoft.OpenApi.IOpenApiSecurityScheme>();
+
+                // 3. 定义 Scheme (具体类 OpenApiSecurityScheme 实现了 IOpenApiSecurityScheme)
+                var securityScheme = new Microsoft.OpenApi.OpenApiSecurityScheme
+                {
+                    Name = "Authorization",
+                    Type = Microsoft.OpenApi.SecuritySchemeType.Http,
+                    Scheme = "bearer",
+                    BearerFormat = "JWT",
+                    In = Microsoft.OpenApi.ParameterLocation.Header,
+                    Description = "请输入 Bearer Token"
+                };
+
+                if (!document.Components.SecuritySchemes.ContainsKey("Bearer"))
+                {
+                    document.Components.SecuritySchemes.Add("Bearer", securityScheme);
+                }
+
+                // 4. 初始化 Security 列表
+                document.Security ??= new List<Microsoft.OpenApi.OpenApiSecurityRequirement>();
+
+                // 5. 添加全局安全要求
+                var requirement = new Microsoft.OpenApi.OpenApiSecurityRequirement
+        {
+            {
+                // v2.0 引用写法
+                new Microsoft.OpenApi.OpenApiSecuritySchemeReference("Bearer", document),
+                new List<string>() // 必须是 List
+            }
+        };
+
+                document.Security.Add(requirement);
+
+                return Task.CompletedTask;
+            });
+        });
 
         services.AddControllers()
             .AddJsonOptions(options =>

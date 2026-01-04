@@ -25,24 +25,7 @@ public static class DependencyInjection
 
     private static void ConfigureEfCore(IServiceCollection services, IConfiguration configuration)
     {
-        services.AddInfrastructureEfCore();
-
-        var masterDb = configuration.GetConnectionString("MasterDb");
-        var slaveDb = configuration.GetConnectionString("SlaveDb");
-
-        services.AddDbContext<UserDbContext>((sp, options) =>
-        {
-            options.AddInterceptors(sp.GetRequiredService<AuditEntityInterceptor>());
-            options.AddInterceptors(sp.GetRequiredService<DispatchDomainEventsInterceptor>());
-            options.UseMySql(masterDb, ServerVersion.AutoDetect(masterDb));
-        });
-
-        services.AddDbContext<UserReadDbContext>((sp, options) =>
-        {
-            options.AddInterceptors(sp.GetRequiredService<DispatchDomainEventsInterceptor>());
-            options.UseMySql(slaveDb, ServerVersion.AutoDetect(slaveDb));
-        });
-
+        services.AddInfrastructureEfCore<UserDbContext, UserReadDbContext>(configuration);
         services.AddScoped(typeof(IReadRepository<>), typeof(UserReadRepository<>));
         services.AddScoped(typeof(IRepository<>), typeof(UserRepository<>));
     }

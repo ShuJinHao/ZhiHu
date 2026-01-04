@@ -7,6 +7,13 @@
     <Project Path="components/Zhihu.Authentication.JwtBearer/Zhihu.Authentication.JwtBearer.csproj" />
   </Folder>
   <Folder Name="/services/" />
+  <Folder Name="/services/question/">
+    <Project Path="services/question/QuestionService.Infrastructure/Zhihu.QuestionService.Infrastructure.csproj" Id="6f578a9a-da07-4525-9419-616c790d5942" />
+    <Project Path="services/question/Zhihu.QuestionService.Core/Zhihu.QuestionService.Core.csproj" Id="82907c44-fe57-494f-a69f-ab74a677522d" />
+    <Project Path="services/question/Zhihu.QuestionService.HttpApi/Zhihu.QuestionService.HttpApi.csproj" />
+    <Project Path="services/question/Zhihu.QuestionService.MigrationWorker/Zhihu.QuestionService.MigrationWorker.csproj" />
+    <Project Path="services/question/Zhihu.QuestionService.UseCases/Zhihu.QuestionService.UseCases.csproj" Id="291c02f1-3706-482b-9d87-55411fa8eaca" />
+  </Folder>
   <Folder Name="/services/user/">
     <Project Path="services/user/Zhihu.UserService.Core/Zhihu.UserService.Core.csproj" />
     <Project Path="services/user/Zhihu.UserService.HttpApi/Zhihu.UserService.HttpApi.csproj" Id="bc587494-4331-4e64-b692-15976f17ef83" />
@@ -17,7 +24,9 @@
   <Folder Name="/shared/">
     <Project Path="shared/Zhihu.Core.Common/Zhihu.Core.Common.csproj" />
     <Project Path="shared/Zhihu.HttpApi.Common/Zhihu.HttpApi.Common.csproj" Id="ff6df619-db63-49a8-a08f-2c2af3491898" />
+    <Project Path="shared/Zhihu.Infrastructure.Cache/Zhihu.Infrastructure.Cache.csproj" Id="b1c77661-f0f5-4c38-a285-8a9a4e3d87f8" />
     <Project Path="shared/Zhihu.Infrastructure.EFCore/Zhihu.Infrastructure.EFCore.csproj" />
+    <Project Path="shared/Zhihu.Infrastructure.MessageBus/Zhihu.Infrastructure.MessageBus.csproj" Id="3eb5c436-730c-485e-9d62-0f1975964625" />
     <Project Path="shared/Zhihu.SharedKernel/Zhihu.SharedKernel.csproj" />
     <Project Path="shared/Zhihu.SharedModels/Zhihu.SharedModels.csproj" />
     <Project Path="shared/Zhihu.UseCases.Common/Zhihu.UseCases.Common.csproj" Id="aefe734c-7e97-47a7-aec4-02c0d0df49a6" />

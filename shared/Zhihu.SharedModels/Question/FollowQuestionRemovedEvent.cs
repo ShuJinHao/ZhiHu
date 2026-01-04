@@ -2,7 +2,7 @@
 
 namespace Zhihu.SharedModels.Question;
 
-public class FollowQuestionRemovedEvent : BaseEvent
+internal class FollowQuestionRemovedEvent : BaseEvent
 {
     public int QuestionId { get; set; }
 }
