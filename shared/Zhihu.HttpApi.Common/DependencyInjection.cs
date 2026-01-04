@@ -15,12 +15,11 @@ public static class DependencyInjection
     {
         services.AddJwtBearer(configuration);
 
-        // 添加OpenAPI服务
-        services.AddOpenApi(options =>
-        {
-            // 注册安全架构转换器
-            options.AddDocumentTransformer<BearerSecuritySchemeTransformer>();
-        });
+        // 2. 关键：加上这句，让原生 OpenAPI 能扫描到 Controller
+        services.AddEndpointsApiExplorer();
+
+        // 3. 原生 OpenAPI 注册 (不要加任何 Transformer 参数！)
+        services.AddOpenApi();
 
         services.AddControllers()
             .AddJsonOptions(options =>

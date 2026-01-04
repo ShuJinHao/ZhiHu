@@ -8,15 +8,15 @@ public static class AppBuilderExtensions
 {
     public static IApplicationBuilder UseHttpApiCommon(this WebApplication app)
     {
+        app.MapOpenApi();
         if (app.Environment.IsDevelopment())
         {
             app.MapScalarApiReference(options =>
             {
+                options.WithOpenApiRoutePattern("/openapi/v1.json");
                 options.WithDefaultHttpClient(ScalarTarget.CSharp, ScalarClient.HttpClient);
             });
         }
-
-        app.MapOpenApi();
 
         app.UseCors("AllowAny");
 
@@ -25,6 +25,8 @@ public static class AppBuilderExtensions
         app.UseAuthorization();
 
         app.UseExceptionHandler(_ => { });
+
+        app.MapControllers();
 
         return app;
     }
