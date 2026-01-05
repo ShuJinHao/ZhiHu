@@ -28,6 +28,10 @@ public static class AppBuilderExtensions
 
         app.MapControllers();
 
+        app.UseCloudEvents();
+
+        app.MapSubscribeHandler();
+
         return app;
     }
 }

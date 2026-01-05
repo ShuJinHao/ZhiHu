@@ -3,6 +3,7 @@ using Elastic.Clients.Elasticsearch.Core.Search;
 using Elastic.Clients.Elasticsearch.QueryDsl;
 using Zhihu.SharedKernel.Paging;
 using Zhihu.SharedKernel.Search;
+using Zhihu.SharedKernel.Result; // 确保引用了Result相关的命名空间，如果你的项目结构不同请调整
 
 namespace Zhihu.SearchService.Infrastructure;
 
@@ -37,7 +38,15 @@ public class ElasticSearchService(ElasticsearchClient client) : ISearchService
 
         var response = await client.SearchAsync<TDoc>(request);
 
+        // 【新增修复】核心改动在这里：检查响应是否有效
+        if (!response.IsValidResponse || response.Hits == null)
+        {
+            // 这里抛出详细错误，你就能看到是“端口被拒”还是“证书错误”了，而不是不明不白的 NullReference
+            throw new Exception($"ES查询失败。原因: {response.DebugInformation}");
+        }
+
         var items = new List<SearchResultItem<TDoc>>();
+        // 只有确认 Hits 不为空，才能调用 Select
         items.AddRange(response.Hits.Select(hit => new SearchResultItem<TDoc>
         {
             Index = hit.Index,
@@ -67,6 +76,12 @@ public class ElasticSearchService(ElasticsearchClient client) : ISearchService
         };
 
         var response = await client.SearchAsync<TDoc>(request);
+
+        // 【新增修复】同上，防止空指针
+        if (!response.IsValidResponse || response.Hits == null)
+        {
+            throw new Exception($"ES查询失败。原因: {response.DebugInformation}");
+        }
 
         var items = new List<SearchResultItem<TDoc>>();
         items.AddRange(response.Hits.Select(hit => new SearchResultItem<TDoc>

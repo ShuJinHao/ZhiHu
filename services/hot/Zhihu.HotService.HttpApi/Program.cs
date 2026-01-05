@@ -1,11 +1,11 @@
+using Zhihu.HotService.Infrastructure;
+using Zhihu.HotService.UseCases;
 using Zhihu.HttpApi.Common;
-using Zhihu.SearchService.Infrastructure;
-using Zhihu.SearchService.UseCases;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.AddServiceDefaults();
 
-builder.Configuration.AddDaprConfiguration();
+builder.Configuration.AddDaprConfiguration(["quartz.json", "appid.json"]);
 
 builder.Services
     .AddInfrastructureServices(builder.Configuration)

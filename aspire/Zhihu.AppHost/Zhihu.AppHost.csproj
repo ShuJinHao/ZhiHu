@@ -16,6 +16,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\services\hot\Zhihu.HotService.HttpApi\Zhihu.HotService.HttpApi.csproj" />
     <ProjectReference Include="..\..\services\question\Zhihu.QuestionService.HttpApi\Zhihu.QuestionService.HttpApi.csproj" />
     <ProjectReference Include="..\..\services\question\Zhihu.QuestionService.MigrationWorker\Zhihu.QuestionService.MigrationWorker.csproj" />
     <ProjectReference Include="..\..\services\search\Zhihu.SearchService.HttpApi\Zhihu.SearchService.HttpApi.csproj" />

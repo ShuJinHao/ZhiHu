@@ -7,6 +7,13 @@
     <Project Path="components/Zhihu.Authentication.JwtBearer/Zhihu.Authentication.JwtBearer.csproj" />
   </Folder>
   <Folder Name="/services/" />
+  <Folder Name="/services/feed/" />
+  <Folder Name="/services/hot/">
+    <Project Path="services/hot/Zhihu.HotService.Core/Zhihu.HotService.Core.csproj" Id="5ad18aef-5ded-404c-91b6-8d8ac4c9876c" />
+    <Project Path="services/hot/Zhihu.HotService.HttpApi/Zhihu.HotService.HttpApi.csproj" Id="ef2f926d-17f3-4e48-ba1d-d5c9ae2b80fa" />
+    <Project Path="services/hot/Zhihu.HotService.Infrastructure/Zhihu.HotService.Infrastructure.csproj" Id="7929cae8-ff01-4456-9cd6-e8882517bd81" />
+    <Project Path="services/hot/Zhihu.HotService.UseCases/Zhihu.HotService.UseCases.csproj" Id="4912d705-c74c-46c6-8f23-b520017fd69e" />
+  </Folder>
   <Folder Name="/services/question/">
     <Project Path="services/question/QuestionService.Infrastructure/Zhihu.QuestionService.Infrastructure.csproj" Id="6f578a9a-da07-4525-9419-616c790d5942" />
     <Project Path="services/question/Zhihu.QuestionService.Core/Zhihu.QuestionService.Core.csproj" Id="82907c44-fe57-494f-a69f-ab74a677522d" />

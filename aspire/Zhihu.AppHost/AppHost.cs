@@ -8,14 +8,10 @@ var mysql = builder.AddMySql("mysql")
     .WithPhpMyAdmin()
     .WithLifetime(ContainerLifetime.Persistent);
 
-// 替换原来的 builder.AddRedis...
+// 【还原】定义独立的 Redis 容器，端口映射为 6380
 var redis = builder.AddContainer("redis", "redis", "latest")
-    // 【端口】避开 Dapr 的 6379，强制用 6380
     .WithEndpoint(port: 6380, targetPort: 6379, name: "redis-port")
-    // 【持久化】这里就是持久化！它替代了不稳定的 WithLifetime
-    // 请确保 D:\Docker\RedisData 文件夹存在
     .WithBindMount(@"D:\Docker\RedisData", "/data")
-    // 【密码】手动指定参数
     .WithArgs("--appendonly", "yes", "--requirepass", "123456");
 
 var username = builder.AddParameter("username", secret: true);
@@ -24,7 +20,12 @@ var rabbitmq = builder.AddRabbitMQ("rabbitmq", username, password, 5672)
     .WithManagementPlugin()
     .WithLifetime(ContainerLifetime.Persistent);
 
-var es = builder.AddConnectionString("es");
+// ES 容器保持不变
+var es = builder.AddContainer("elasticsearch", "elasticsearch", "8.11.1")
+    .WithEndpoint(port: 9200, targetPort: 9200, name: "http")
+    .WithEnvironment("discovery.type", "single-node")
+    .WithEnvironment("xpack.security.enabled", "false")
+    .WithBindMount(@"D:\Docker\ESData", "/usr/share/elasticsearch/data");
 
 var daprSidecarOptions = new DaprSidecarOptions
 {
@@ -33,8 +34,12 @@ var daprSidecarOptions = new DaprSidecarOptions
 
 builder.AddUserService(mysql, daprSidecarOptions);
 
+// 【还原】把 redis 参数加回来
 builder.AddQuestionService(mysql, redis, rabbitmq, daprSidecarOptions);
 
 builder.AddSearchService(es, daprSidecarOptions);
+
+// 【还原】把 redis 参数加回来
+builder.AddHotService(redis, rabbitmq, daprSidecarOptions);
 
 builder.Build().Run();

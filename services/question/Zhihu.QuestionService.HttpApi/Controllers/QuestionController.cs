@@ -64,5 +64,31 @@ public class QuestionController : ApiControllerBase
 
         return ReturnResult(result);
     }
-    
+
+    /// <summary>
+    /// 获取最新问题指标统计
+    /// </summary>
+    /// <param name="createdAtBegin"></param>
+    /// <param name="lastModifiedBegin"></param>
+    /// <returns></returns>
+    [HttpGet("stat")]
+    public async Task<IActionResult> Get(DateTimeOffset createdAtBegin, DateTimeOffset lastModifiedBegin)
+    {
+        var result = await Sender.Send(new GetQuestionStatsByDateQuery(createdAtBegin, lastModifiedBegin));
+
+        return ReturnResult(result);
+    }
+
+    /// <summary>
+    /// 批量获取指定问题信息
+    /// </summary>
+    /// <param name="ids"></param>
+    /// <returns></returns>
+    [HttpGet("hot")]
+    public async Task<IActionResult> Get([FromQuery] int[] ids)
+    {
+        var result = await Sender.Send(new GetQuestionInfosByIdsQuery(ids));
+
+        return ReturnResult(result);
+    }
 }

@@ -10,7 +10,7 @@ public static class QuestionServiceBuilder
 
     public static void AddQuestionService(this IDistributedApplicationBuilder builder,
      IResourceBuilder<MySqlServerResource> mysql,
-     // 【修改 1】这里必须改类型，因为现在传进来的是个纯容器
+     // 【还原】加回参数
      IResourceBuilder<ContainerResource> redis,
      IResourceBuilder<RabbitMQServerResource> rabbitmq,
      DaprSidecarOptions? daprSidecarOptions = null)
@@ -28,12 +28,10 @@ public static class QuestionServiceBuilder
             .WithReference(db, MasterDb)
             .WithReference(db, SlaveDb)
             .WaitFor(mysql)
-            // 【修改 2】纯容器没有魔法，WithReference 没法自动注入连接字符串
-            // 我们直接告诉它连哪里 (对应 Program.cs 里的 6380 端口)
-            // 注意：这里的 Key "ConnectionStrings__redis" 要和你 appsettings.json 或代码里读取的名字一致
-            // 如果你的代码里写的是 AddRedisClient("cache1")，这里就写 "ConnectionStrings__cache1"
+            // 【还原】注入连接字符串，指向 6380
+            // 确保这里是 6380，密码 123456
             .WithEnvironment("ConnectionStrings__redis", "localhost:6380,password=123456")
-            .WaitFor(redis)
+            .WaitFor(redis) // 等待 Redis 容器启动
             .WithDaprSidecar(daprSidecarOptions)
             .WaitFor(rabbitmq)
             .WaitForCompletion(migration);

@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MySql.Data" Version="9.5.0" />
+    <PackageReference Include="StackExchange.Redis" Version="2.10.1" />
+    <PackageReference Include="Dapr.AspNetCore" Version="1.16.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\shared\Zhihu.Infrastructure.Quartz\Zhihu.Infrastructure.Quartz.csproj" />
+    <ProjectReference Include="..\..\..\shared\Zhihu.SharedKernel\Zhihu.SharedKernel.csproj" />
+    <ProjectReference Include="..\..\..\shared\Zhihu.SharedModels\Zhihu.SharedModels.csproj" />
+    <ProjectReference Include="..\Zhihu.HotService.Core\Zhihu.HotService.Core.csproj" />
+  </ItemGroup>
+
+</Project>
