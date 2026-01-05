@@ -14,6 +14,11 @@
     <Project Path="services/question/Zhihu.QuestionService.MigrationWorker/Zhihu.QuestionService.MigrationWorker.csproj" />
     <Project Path="services/question/Zhihu.QuestionService.UseCases/Zhihu.QuestionService.UseCases.csproj" Id="291c02f1-3706-482b-9d87-55411fa8eaca" />
   </Folder>
+  <Folder Name="/services/search/">
+    <Project Path="services/search/Zhihu.SearchService.HttpApi/Zhihu.SearchService.HttpApi.csproj" />
+    <Project Path="services/search/Zhihu.SearchService.Infrastructure/Zhihu.SearchService.Infrastructure.csproj" Id="0be0aa09-7526-4132-97c3-5bcbdbc624fa" />
+    <Project Path="services/search/Zhihu.SearchService.UseCases/Zhihu.SearchService.UseCases.csproj" Id="4915b668-b88c-4240-ba90-499794790f82" />
+  </Folder>
   <Folder Name="/services/user/">
     <Project Path="services/user/Zhihu.UserService.Core/Zhihu.UserService.Core.csproj" />
     <Project Path="services/user/Zhihu.UserService.HttpApi/Zhihu.UserService.HttpApi.csproj" Id="bc587494-4331-4e64-b692-15976f17ef83" />
@@ -27,6 +32,7 @@
     <Project Path="shared/Zhihu.Infrastructure.Cache/Zhihu.Infrastructure.Cache.csproj" Id="b1c77661-f0f5-4c38-a285-8a9a4e3d87f8" />
     <Project Path="shared/Zhihu.Infrastructure.EFCore/Zhihu.Infrastructure.EFCore.csproj" />
     <Project Path="shared/Zhihu.Infrastructure.MessageBus/Zhihu.Infrastructure.MessageBus.csproj" Id="3eb5c436-730c-485e-9d62-0f1975964625" />
+    <Project Path="shared/Zhihu.Infrastructure.Quartz/Zhihu.Infrastructure.Quartz.csproj" Id="8393abb4-aa93-48a6-a84e-2921c1549c8c" />
     <Project Path="shared/Zhihu.SharedKernel/Zhihu.SharedKernel.csproj" />
     <Project Path="shared/Zhihu.SharedModels/Zhihu.SharedModels.csproj" />
     <Project Path="shared/Zhihu.UseCases.Common/Zhihu.UseCases.Common.csproj" Id="aefe734c-7e97-47a7-aec4-02c0d0df49a6" />

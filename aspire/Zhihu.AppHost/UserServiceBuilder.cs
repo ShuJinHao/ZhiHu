@@ -15,13 +15,16 @@ public static class UserServiceBuilder
         IResourceBuilder<MySqlServerResource> mysql,
          DaprSidecarOptions? daprSidecarOptions = null)
     {
+        var appId = builder.Configuration["AppId:UserService"];
+        ArgumentNullException.ThrowIfNull(appId);
+
         var db = mysql.AddDatabase("zhihu-user");
 
         var migration = builder.AddProject<Zhihu_UserService_MigrationWorker>("UserService-MigrationWorker")
             .WithReference(db, MasterDb)
             .WaitFor(mysql);
 
-        builder.AddProject<Zhihu_UserService_HttpApi>("UserService-HttpApi")
+        builder.AddProject<Zhihu_UserService_HttpApi>(appId)
             .WithReference(db, MasterDb)
             .WithReference(db, SlaveDb)
             .WithDaprSidecar(daprSidecarOptions)

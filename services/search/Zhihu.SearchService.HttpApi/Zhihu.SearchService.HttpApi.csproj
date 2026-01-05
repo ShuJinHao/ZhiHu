@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\aspire\Zhihu.ServiceDefaults\Zhihu.ServiceDefaults.csproj" />
+    <ProjectReference Include="..\..\..\shared\Zhihu.HttpApi.Common\Zhihu.HttpApi.Common.csproj" />
+    <ProjectReference Include="..\Zhihu.SearchService.UseCases\Zhihu.SearchService.UseCases.csproj" />
+  </ItemGroup>
+
+</Project>

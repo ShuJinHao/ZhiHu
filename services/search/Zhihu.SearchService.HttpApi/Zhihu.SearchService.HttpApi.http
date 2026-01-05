@@ -1,0 +1,6 @@
+@Zhihu.SearchService.HttpApi_HostAddress = http://localhost:5116
+
+GET {{Zhihu.SearchService.HttpApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

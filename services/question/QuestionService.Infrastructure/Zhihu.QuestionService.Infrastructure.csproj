@@ -10,6 +10,7 @@
     <ProjectReference Include="..\..\..\shared\Zhihu.Infrastructure.Cache\Zhihu.Infrastructure.Cache.csproj" />
     <ProjectReference Include="..\..\..\shared\Zhihu.Infrastructure.EFCore\Zhihu.Infrastructure.EFCore.csproj" />
     <ProjectReference Include="..\..\..\shared\Zhihu.Infrastructure.MessageBus\Zhihu.Infrastructure.MessageBus.csproj" />
+    <ProjectReference Include="..\..\..\shared\Zhihu.Infrastructure.Quartz\Zhihu.Infrastructure.Quartz.csproj" />
     <ProjectReference Include="..\Zhihu.QuestionService.Core\Zhihu.QuestionService.Core.csproj" />
   </ItemGroup>
 

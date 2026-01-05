@@ -3,6 +3,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Zhihu.Infrastructure.Cache;
 using Zhihu.Infrastructure.EFCore;
 using Zhihu.Infrastructure.MessageBus;
+using Zhihu.Infrastructure.Quartz;
 using Zhihu.QuestionService.Core.Data;
 using Zhihu.QuestionService.Infrastructure.Contexts;
 using Zhihu.QuestionService.Infrastructure.Repositories;
@@ -42,18 +43,18 @@ public static class DependencyInjection
 
     private static void ConfigureQuartz(this IServiceCollection services)
     {
-        //var quartzOption = new QuartzOption
-        //{
-        //    Schedulers =
-        //    [
-        //        new SchedulerOption
-        //        {
-        //            ["quartz.scheduler.instanceName"] = SchedulerDefinition.LocalScheduler,
-        //            ["quartz.jobStore.type"] = "Quartz.Simpl.RAMJobStore, Quartz"
-        //        }
-        //    ]
-        //};
+        var quartzOption = new QuartzOption
+        {
+            Schedulers =
+            [
+                new SchedulerOption
+                {
+                    ["quartz.scheduler.instanceName"] = SchedulerDefinition.LocalScheduler,
+                    ["quartz.jobStore.type"] = "Quartz.Simpl.RAMJobStore, Quartz"
+                }
+            ]
+        };
 
-        //services.AddQuartzService(quartzOption);
+        services.AddQuartzService(quartzOption);
     }
 }

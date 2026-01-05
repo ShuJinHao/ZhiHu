@@ -8,6 +8,7 @@ using Zhihu.SharedKernel.Messaging;
 using Zhihu.SharedKernel.Result;
 using Zhihu.SharedModels.Question;
 using Zhihu.QuestionService.UseCases.Questions;
+using Zhihu.QuestionService.UseCases.Questions.Jobs;
 
 namespace Zhihu.QuestionService.UseCases.Questions.Queries;
 
@@ -46,7 +47,7 @@ public class GetQuestionQueryHandler(
         });
 
         if (questionDto == null) return Result.NotFound("问题不存在");
-        // QuestionViewCounter.Add(questionDto.Id);
+        QuestionViewCounter.Add(questionDto.Id);
         await bus.PublishAsync(new QuestionViewedEvent(questionDto.Id));
 
         return Result.Success(questionDto);
