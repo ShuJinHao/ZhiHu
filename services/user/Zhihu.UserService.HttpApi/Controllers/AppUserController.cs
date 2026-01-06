@@ -46,4 +46,17 @@ public class AppUserController : ApiControllerBase
 
         return ReturnResult(result);
     }
+
+    /// <summary>
+    /// 获取指定用户的所有粉丝
+    /// </summary>
+    /// <param name="id"></param>
+    /// <returns></returns>
+    [HttpGet("{id:int}/followers")]
+    public async Task<IActionResult> GetFollowerUsers(int id)
+    {
+        var result = await Sender.Send(new GetFollowerUsersQuery(id));
+
+        return ReturnResult(result);
+    }
 }

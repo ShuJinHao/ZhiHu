@@ -42,4 +42,6 @@ builder.AddSearchService(es, daprSidecarOptions);
 // 【还原】把 redis 参数加回来
 builder.AddHotService(redis, rabbitmq, daprSidecarOptions);
 
+builder.AddFeedService(mysql, rabbitmq, daprSidecarOptions);
+
 builder.Build().Run();

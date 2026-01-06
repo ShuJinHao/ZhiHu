@@ -7,7 +7,13 @@
     <Project Path="components/Zhihu.Authentication.JwtBearer/Zhihu.Authentication.JwtBearer.csproj" />
   </Folder>
   <Folder Name="/services/" />
-  <Folder Name="/services/feed/" />
+  <Folder Name="/services/feed/">
+    <Project Path="services/feed/Zhihu.FeedService.Core/Zhihu.FeedService.Core.csproj" Id="72aa4b04-50e4-4895-b3c0-b938c6e1e4a1" />
+    <Project Path="services/feed/Zhihu.FeedService.HttpApi/Zhihu.FeedService.HttpApi.csproj" Id="bd063f03-f781-4d52-8944-344ee464a08c" />
+    <Project Path="services/feed/Zhihu.FeedService.Infrastructure/Zhihu.FeedService.Infrastructure.csproj" Id="2786c7e6-4826-49c9-9098-b4acc9b4202c" />
+    <Project Path="services/feed/Zhihu.FeedService.MigrationWorker/Zhihu.FeedService.MigrationWorker.csproj" />
+    <Project Path="services/feed/Zhihu.FeedService.UseCases/Zhihu.FeedService.UseCases.csproj" Id="f0f1284b-70b3-4e78-ba64-80983208b453" />
+  </Folder>
   <Folder Name="/services/hot/">
     <Project Path="services/hot/Zhihu.HotService.Core/Zhihu.HotService.Core.csproj" Id="5ad18aef-5ded-404c-91b6-8d8ac4c9876c" />
     <Project Path="services/hot/Zhihu.HotService.HttpApi/Zhihu.HotService.HttpApi.csproj" Id="ef2f926d-17f3-4e48-ba1d-d5c9ae2b80fa" />
