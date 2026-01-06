@@ -25,6 +25,13 @@ public class CacheService<TValue>(IFusionCache cache) : ICacheService<TValue> wh
         return await cache.GetOrSetAsync<PagedList<TValue>?>(key, factory);
     }
 
+    public async ValueTask<List<TValue>?> GetOrSetListAsync(Func<CancellationToken, Task<List<TValue>?>> factory)
+    {
+        var key = $"{Key}:list";
+
+        return await cache.GetOrSetAsync<List<TValue>?>(key, factory);
+    }
+
     public async ValueTask<TValue?> GetOrSetByKeyAsync(Func<CancellationToken, Task<TValue?>> factory)
     {
         return await cache.GetOrSetAsync<TValue?>(Key, factory);

@@ -16,8 +16,4 @@
     <ProjectReference Include="..\Zhihu.UserService.Core\Zhihu.UserService.Core.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Migrations\" />
-  </ItemGroup>
-
 </Project>

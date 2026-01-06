@@ -26,7 +26,8 @@
         "ASPIRE_DASHBOARD_OTLP_ENDPOINT_URL": "http://localhost:19186",
         "ASPIRE_DASHBOARD_MCP_ENDPOINT_URL": "http://localhost:18005",
         "ASPIRE_RESOURCE_SERVICE_ENDPOINT_URL": "http://localhost:20148",
-        "ASPIRE_ALLOW_UNSECURED_TRANSPORT": "true"
+        "ASPIRE_ALLOW_UNSECURED_TRANSPORT": "true",
+        "APP_API_TOKEN": "123456"
       }
     }
   }

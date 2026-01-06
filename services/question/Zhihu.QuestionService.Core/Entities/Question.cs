@@ -1,8 +1,9 @@
 ﻿using Zhihu.Core.Common;
+using Zhihu.Core.Common.Entities;
+using Zhihu.QuestionService.Core.Data;
 using Zhihu.SharedKernel.Domain;
 using Zhihu.SharedKernel.Result;
-using Zhihu.QuestionService.Core.Data;
-using Zhihu.Core.Common.Entities;
+using Zhihu.SharedModels.Enums;
 
 namespace Zhihu.QuestionService.Core.Entities;
 
@@ -17,6 +18,7 @@ public class Question : AuditWithUserEntity, IAggregateRoot
     public int ViewCount { get; private set; }
 
     public int FollowerCount { get; set; }
+    public UserType CreatedByType { get; set; }
 
     public ICollection<Answer> Answers { get; set; } = new List<Answer>();
 

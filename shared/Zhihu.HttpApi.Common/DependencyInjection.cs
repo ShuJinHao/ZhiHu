@@ -13,10 +13,23 @@ public static class DependencyInjection
 {
     public static IServiceCollection AddHttpApiCommon(this IServiceCollection services, IConfiguration configuration)
     {
-        services.AddDaprClient(builder => builder.UseJsonSerializationOptions(new JsonSerializerOptions
+        services.AddDaprClient(builder =>
         {
-            PropertyNamingPolicy = JsonNamingPolicy.SnakeCaseLower
-        }));
+            // 1. 保持序列化一致性（必须保留！）
+            builder.UseJsonSerializationOptions(new JsonSerializerOptions
+            {
+                PropertyNamingPolicy = JsonNamingPolicy.SnakeCaseLower
+            });
+
+            // 2. 添加 Dapr API Token 配置
+            // 建议先判空，防止配置不存在时报错，虽然 Dapr SDK 内部也会处理
+            var apiToken = configuration["APP_API_TOKEN"];
+            if (!string.IsNullOrEmpty(apiToken))
+            {
+                builder.UseDaprApiToken(apiToken);
+            }
+        });
+
         services.AddJwtBearer(configuration);
 
         // 2. 关键：加上这句，让原生 OpenAPI 能扫描到 Controller

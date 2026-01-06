@@ -1,4 +1,6 @@
-﻿namespace Zhihu.QuestionService.UseCases.Answers;
+﻿using Zhihu.SharedModels.Enums;
+
+namespace Zhihu.QuestionService.UseCases.Answers;
 
 public record AnswerDto
 {
@@ -12,7 +14,5 @@ public record AnswerDto
 
     public int? CreatedBy { get; init; }
 
-    public string? CreatedByNickName { get; init; }
-
-    public string? CreatedByBio { get; init; }
+    public UserType CreatedByType { get; init; }
 }

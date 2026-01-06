@@ -9,9 +9,11 @@ using Zhihu.SharedKernel.Result;
 using Zhihu.SharedModels.Question;
 using Zhihu.QuestionService.UseCases.Questions;
 using Zhihu.QuestionService.UseCases.Questions.Jobs;
+using Zhihu.UseCases.Common.Attributes;
 
 namespace Zhihu.QuestionService.UseCases.Questions.Queries;
 
+[Authorize]
 public record GetQuestionQuery(int Id) : IQuery<Result<QuestionDto>>;
 
 public class GetQuestionQueryValidator : AbstractValidator<GetQuestionQuery>

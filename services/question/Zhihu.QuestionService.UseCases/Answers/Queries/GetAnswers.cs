@@ -30,16 +30,17 @@ public class GetAnswersQueryHandler(
         var answers = await cacheService.GetOrSetListByPageAsync(request.QuestionId, request.Pagination, async _ =>
         {
             var queryable = from answer in dbContext.Answers.AsNoTracking()
-                where answer.QuestionId == request.QuestionId
-                orderby answer.LikeCount descending
-                select new AnswerDto
-                {
-                    Id = answer.Id,
-                    Content = answer.Content,
-                    LikeCount = answer.LikeCount,
-                    LastModifiedAt = answer.LastModifiedAt,
-                    CreatedBy = answer.CreatedBy
-                };
+                            where answer.QuestionId == request.QuestionId
+                            orderby answer.LikeCount descending
+                            select new AnswerDto
+                            {
+                                Id = answer.Id,
+                                Content = answer.Content,
+                                LikeCount = answer.LikeCount,
+                                LastModifiedAt = answer.LastModifiedAt,
+                                CreatedBy = answer.CreatedBy,
+                                CreatedByType = answer.CreatedByType
+                            };
 
             return await queryable.ToPageListAsync(request.Pagination);
         });

@@ -13,5 +13,7 @@ public interface ICacheService<TValue> where TValue : class
     ValueTask<PagedList<TValue>?> GetOrSetListByPageAsync(int id, Pagination pagination,
         Func<CancellationToken, Task<PagedList<TValue>?>> factory);
 
+    ValueTask<List<TValue>?> GetOrSetListAsync(Func<CancellationToken, Task<List<TValue>?>> factory);
+
     ValueTask<TValue?> GetOrSetByKeyAsync(Func<CancellationToken, Task<TValue?>> factory);
 }

@@ -7,6 +7,13 @@
     <Project Path="components/Zhihu.Authentication.JwtBearer/Zhihu.Authentication.JwtBearer.csproj" />
   </Folder>
   <Folder Name="/services/" />
+  <Folder Name="/services/agent/">
+    <Project Path="services/agent/Zhihu.AgentService.Core/Zhihu.AgentService.Core.csproj" Id="979a21a8-eb5c-44e7-a7c6-02361de2a7f4" />
+    <Project Path="services/agent/Zhihu.AgentService.HttpApi/Zhihu.AgentService.HttpApi.csproj" />
+    <Project Path="services/agent/Zhihu.AgentService.Infrastructure/Zhihu.AgentService.Infrastructure.csproj" Id="716e2c78-c2fe-4f55-91e7-4a7c4fd6fceb" />
+    <Project Path="services/agent/Zhihu.AgentService.MigrationWorker/Zhihu.AgentService.MigrationWorker.csproj" />
+    <Project Path="services/agent/Zhihu.AgentService.UseCases/Zhihu.AgentService.UseCases.csproj" Id="90dad09d-7dea-490e-a54a-5d3d3d04d51c" />
+  </Folder>
   <Folder Name="/services/feed/">
     <Project Path="services/feed/Zhihu.FeedService.Core/Zhihu.FeedService.Core.csproj" Id="72aa4b04-50e4-4895-b3c0-b938c6e1e4a1" />
     <Project Path="services/feed/Zhihu.FeedService.HttpApi/Zhihu.FeedService.HttpApi.csproj" Id="bd063f03-f781-4d52-8944-344ee464a08c" />

@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Dapr.AspNetCore" Version="1.16.1" />
+    <PackageReference Include="Microsoft.SemanticKernel" Version="1.68.0" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="8.15.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\components\Zhihu.Authentication.JwtBearer\Zhihu.Authentication.JwtBearer.csproj" />
+    <ProjectReference Include="..\..\..\shared\Zhihu.Infrastructure.Cache\Zhihu.Infrastructure.Cache.csproj" />
+    <ProjectReference Include="..\..\..\shared\Zhihu.Infrastructure.EFCore\Zhihu.Infrastructure.EFCore.csproj" />
+    <ProjectReference Include="..\Zhihu.AgentService.Core\Zhihu.AgentService.Core.csproj" />
+  </ItemGroup>
+
+</Project>

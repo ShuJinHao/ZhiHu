@@ -1,7 +1,8 @@
 ﻿using Zhihu.Core.Common;
-using Zhihu.SharedKernel.Result;
-using Zhihu.QuestionService.Core.Data;
 using Zhihu.Core.Common.Entities;
+using Zhihu.QuestionService.Core.Data;
+using Zhihu.SharedKernel.Result;
+using Zhihu.SharedModels.Enums;
 
 namespace Zhihu.QuestionService.Core.Entities;
 
@@ -19,6 +20,7 @@ public class Answer : AuditWithUserEntity
     public int LikeCount { get; private set; }
 
     public int DislikeCount { get; private set; }
+    public UserType CreatedByType { get; set; }
 
     /// <summary>
     ///     点赞/点踩记录列表

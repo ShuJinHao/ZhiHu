@@ -40,7 +40,7 @@ public class CreateAnswerCommandHandler(
         if (question == null) return Result.NotFound("问题不存在");
 
         var answer = mapper.Map<Answer>(request);
-
+        answer.CreatedByType = user.UserType;
         question.Answers.Add(answer);
 
         answer.AddDomainEvent(new AnswerCreatedEvent(question.Id));

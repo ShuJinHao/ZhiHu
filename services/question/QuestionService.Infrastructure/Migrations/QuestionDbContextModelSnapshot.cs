@@ -40,6 +40,9 @@ namespace Zhihu.QuestionService.Infrastructure.Migrations
                     b.Property<int?>("CreatedBy")
                         .HasColumnType("int");
 
+                    b.Property<int>("CreatedByType")
+                        .HasColumnType("int");
+
                     b.Property<int>("DislikeCount")
                         .HasColumnType("int");
 
@@ -134,6 +137,9 @@ namespace Zhihu.QuestionService.Infrastructure.Migrations
                         .HasColumnType("datetime(6)");
 
                     b.Property<int?>("CreatedBy")
+                        .HasColumnType("int");
+
+                    b.Property<int>("CreatedByType")
                         .HasColumnType("int");
 
                     b.Property<string>("Description")

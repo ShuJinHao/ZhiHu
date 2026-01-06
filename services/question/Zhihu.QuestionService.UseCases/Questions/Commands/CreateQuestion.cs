@@ -10,6 +10,7 @@ using Zhihu.SharedKernel.Result;
 using Zhihu.SharedModels.Feed;
 using Zhihu.UseCases.Common.Attributes;
 using Zhihu.QuestionService.UseCases.Questions;
+using Zhihu.SharedModels.Question;
 
 namespace Zhihu.QuestionService.UseCases.Questions.Commands;
 
@@ -54,6 +55,14 @@ public class CreateQuestionCommandHandler(
             FeedId = question.Id,
             UserId = user.Id!.Value
         });
+
+        await bus.PublishAsync(
+            new QuestionCreatedEvent
+            {
+                Id = question.Id,
+                Title = question.Title,
+                Description = question.Description
+            });
 
         return Result.Success(new CreatedQuestionDto(question.Id));
     }
